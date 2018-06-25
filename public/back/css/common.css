@@ -1,0 +1,25 @@
+.body_bg {
+  background-color: #222D32;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration:none;
+}
+
+
+.mt_150 {
+  margin-top:150px;
+}
+
+
+.panel .panel-title {
+  font-size:20px;
+  height:50px;
+  line-height:50px;
+  padding:0;
+}
+
+
