@@ -9,8 +9,68 @@
   <link rel="stylesheet" href="css/common.css">
 </head>
 <body >
+<!--首页的制作-->
 
-这是首页
+<!--左侧边栏-->
+<div class="lt-aside">
+  <div class="brand">
+    <a href="#"><h3>黑马21期</h3></a>
+  </div>
+  <div class="user">
+    <img src="./images/01.jpg" alt="">
+    <p>超级管理员</p>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="#" class="current"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
+      <li>
+        <a href="#" class="category"><i class="glyphicon glyphicon-list"></i><span>分类管理</span></a>
+        <div class="child" style="display:none">
+          <a href="#">一级分类</a>
+          <a href="#">二级分类</a>
+        </div>
+      </li>
+      <li><a href="#"><i class="glyphicon glyphicon-tags"></i><span>商品管理</span></a></li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="lt-mian">
+  <!--上面的部分-->
+  <div class="lt-topbar">
+    <a href="#" class="pull-left icon-menu"><i class="glyphicon glyphicon-align-justify"></i></a>
+    <a href="#" class="pull-right icon-loginout"><i class="glyphicon glyphicon-log-out"></i></a>
+  </div>
+  <!--下面的部分-->
+  <div class="container-fluid">
+    <!--路径导航-->
+    <ol class="breadcrumb">
+      <li><a href="#">管理系统</a></li>
+      <li class="active">首页</li>
+    </ol>
+  </div>
+</div>
+
+<!--模态框-->
+<div class="modal fade" id="loginModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" >
+          <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">温馨提示:</h4>
+      </div>
+      <div class="modal-body">
+        <p class="red"><i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary btn-loginout">确认</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script src="./lib/jquery/jquery.min.js"></script>

@@ -2,6 +2,11 @@
   background-color: #222D32;
 }
 
+/* 红色提示信息颜色 */
+.red {
+  color: #A94442;
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -21,5 +26,121 @@ a:active {
   line-height:50px;
   padding:0;
 }
+
+/*左侧边栏*/
+.lt-aside {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  left:0;
+  top:0;
+  background-color: #222D32;
+  transition:all 1s;
+  z-index:999;
+}
+.lt-aside.hiddenMenu {
+  left:-180px;
+}
+
+.lt-aside  .brand a {
+  display:block;
+}
+.lt-aside  .brand h3 {
+  font-size:24px;
+  height: 50px;
+  margin:0;
+  line-height:50px;
+  text-align:center;
+  background-color:#367FA9;
+  color:#fff;
+}
+.lt-aside .user {
+  height: 180px;
+  width: 180px;
+  padding-top:30px;
+}
+.lt-aside .user img {
+  width: 80px;
+  height: 80px;
+  display:block;
+  border-radius:50%;
+  margin:0 auto;
+}
+.lt-aside .user p {
+  font-size:18px;
+  line-height:40px;
+  height:40px;
+  color:#fff;
+  text-align:center;
+}
+
+.lt-aside .nav ul{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+.lt-aside .nav a {
+  display:block;
+  width: 100%;
+  color:#fff;
+  height:40px;
+  line-height:40px;
+  padding-left:40px;
+  border-left:3px solid transparent;
+}
+.lt-aside .nav a.current {
+  background-color: #1D1F21;
+  border-left:3px solid #006699;
+}
+
+.lt-aside .nav .child a  {
+  padding-left:60px;
+}
+.lt-aside .nav a i {
+  margin-right:10px;
+}
+
+/*下面部分的代码*/
+.lt-mian {
+  width: 100%;
+  height: 1000px;
+  background-color: pink;
+  padding-left:180px;
+  transition:all 1s;
+  padding-top:50px;
+}
+.lt-mian.hiddenMenu {
+  padding-left:0px;
+}
+ .lt-topbar {
+   width: 100%;
+   height: 50px;
+   position: fixed;
+   left:0;
+   top:0;
+   background-color: #3C8DBC;
+   padding-left:180px;
+   transition:all 1s;
+}
+
+.lt-topbar .icon-menu,
+.lt-topbar .icon-loginout {
+  font-size:20px;
+  width: 50px;
+  height: 50px;
+  line-height:50px;
+  text-align:center;
+}
+.lt-mian .lt-topbar.hiddenMenu {
+  padding-left:0px;
+}
+.lt-mian .lt-topbar a {
+  color:#fff;
+  line-height:50px;
+  height:50px;
+  font-size:20px;
+}
+
+
 
 
