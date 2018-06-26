@@ -141,6 +141,13 @@ a:active {
   font-size:20px;
 }
 
+/*图标的设置*/
+.ecahrts_1,
+.ecahrts_2 {
+  width: 48%;
+  height: 400px;
+}
+
 
 
 
